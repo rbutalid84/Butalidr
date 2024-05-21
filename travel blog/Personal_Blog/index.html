@@ -1,0 +1,114 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Personal blog</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Ry</span>an</a>
+
+        <nav class="navbar">
+            <a href="">Portfolio</a>
+            <a href="#about">About</a>
+        
+            <ul class="dropdown">
+                <li><a href="#">Blogs</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#blog-section">Personal</a></li>
+                        <li><a href="./">Travel</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </nav>
+        
+        </div>
+
+        <!-- <a href="#blog-section" class="contact">Blog</a> -->
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-container">
+            <div class="container">
+                <div class="home-content">
+                    <h1>I'm <span>Ryan</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laudantium ea neque ut dolorem nobis
+                        molestias numquam exercitationem ab sint, libero odio magnam praesentium illo ducimus illum sunt
+                        possimus voluptatum.</p>
+                    <!-- 
+                    <div class="btn-box">
+                        <button class="btn-1">Learn more!</button>
+                        -->
+                </div>
+                <div class="img-box">
+                    <img src="./ry.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="./about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me
+                </span></h2>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui ad corrupti nam quas sint officia omnis
+                debitis consectetur voluptate similique reprehenderit placeat laborum atque assumenda, amet voluptatum
+                modi. Dolorem, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolore non
+                dolor impedit rem sapiente cumque, quaerat hic adipisci consequuntur distinctio eius quisquam neque
+                nihil magnam voluptates enim officiis! Hic?</p>
+
+        </div>
+    </section>
+
+    
+    
+    
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+
+
+
+    <footer class="footer">
+
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+
+        </div>
+
+        <p class="copyright">@ 2024 Ryan | All rights Reserved</p>
+    </footer>
+</body>
+
+</html>

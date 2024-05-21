@@ -1,0 +1,112 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Personal blog</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Ry</span>an</a>
+
+        <nav class="navbar">
+            <a href="#home">Portfolio</a>
+            <a href="#about">About</a>
+        
+            <ul class="dropdown">
+                <li><a href="#">Blogs</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../Sports blog/sports.html">Sports</a></li>
+                        <li><a href="../travel blog/index.html">Travel</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </nav>
+        
+        </div>
+
+        <!-- <a href="#blog-section" class="contact">Blog</a> -->
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-container">
+            <div class="container">
+                <div class="home-content">
+                    <h1>I'm <span>Ryan</h1>
+
+                    <p>Welcome to My World: Where Sports and Travel Tales Await!</p>
+                    <!-- 
+                    <div class="btn-box">
+                        <button class="btn-1">Learn more!</button>
+                        -->
+                </div>
+                <div class="img-box">
+                    <img src="./ry.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="./about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me
+                </span></h2>
+
+            <p>Welcome to my corner of the web! I'm Ryan, and I'm thrilled to have you here. On this blog, I
+                share snippets from my Travel adventures, Sports tales, whether it's a
+                spontaneous day trip or a weekend getaway. Through my Sports stories and travel experiences, I hope to
+                inspire you to embrace life's moments, big and small, and to find joy in the beauty of everyday
+                discoveries.</p>
+
+        </div>
+    </section>
+
+    
+    
+    
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+
+
+
+    <footer class="footer">
+
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+
+        </div>
+
+        <p class="copyright">@ 2024 Ryan | All rights Reserved</p>
+    </footer>
+</body>
+
+</html>

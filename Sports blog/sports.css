@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background-color: #2D283D;
+    backdrop-filter: blur(10ox);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999999;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: #1AB89A;
+    text-shadow: 0 0 25px #1AB89A,
+                 0 0 25px #1AB89A;
+    transform: scale(1.1);
+}
+span{
+    color: #1AB89A;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #1AB89A;
+    border-bottom: 3px solid #1AB89A;
+}
+
+.container{
+    width: 100%;
+}
+.container .row{
+    width: 80%;
+    margin: auto;
+}
+.container .row .header1{
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+    
+}
+.container .row .header1 h1{
+    padding-top: 30px;
+    font-size: 45px;
+    color: #e19c30;
+}
+.container .row .header1 p{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #6e6e6e;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.content .card{
+    flex: 1;
+    margin: 50px 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    background-color: #fff;
+
+}
+.content .card img{
+    width: 100%;
+    height: auto;
+}
+.content .card h4{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.content .card p{
+    font-size: 15px;
+    color: #6e6e6e;
+    line-height: 1.5;
+    padding: 10px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.card #img3{
+    height: 420px;
+}
+
+ @media (width < 750px) {
+
+.container .row .header1 h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+
+    position: relative;
+    margin-left: 2px;
+    
+}
+
+
+.container h1{
+    transform: translate(-95%, 10%);
+}
+
+.container p{
+    
+    transform: translate(-95%, 4%);
+}
+
+    
+} 
+
+.par{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    
+}
+
+/* ------------------------VIDEO---------------------------------------------------------- */
+
+.video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-bottom: 20px;
+    margin-top: auto;
+}
+
+.video-container video {
+    width: 75%;
+    height: 80%;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)''
+}
+
+.intro-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.intro-overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.intro-overlay p {
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 768px){
+.logo{
+  display: none;
+}
+
+.navbar{
+  display: flex;
+}
+
+.video-container{
+    transform: translate(-1%, -17%);
+    margin-left: 6px;
+}
+}
+
+
+
+/* ------------------------Billiard---------------------------------------------------------- */
+
+.container_billard{
+    width: 100%;
+}
+.container_billard .row{
+    width: 80%;
+    margin: auto;
+}
+.container_billard .row .header1{
+    margin-left: 15rem;
+    width: 60%;
+    text-align: center;
+    margin-top: 5rem;
+    text-align: justify;
+}
+.container_billard .row .header1 h1{
+    padding-top: 30px;
+    font-size: 45px;
+    color: #e19c30;
+    margin-left: 10rem;
+}
+.container_billard .row .header1 p{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #6e6e6e;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.content .card{
+    flex: 1;
+    margin: 50px 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    background-color: #fff;
+
+}
+.content .card img{
+    width: 100%;
+    height: auto;
+}
+.content .card h4{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.content .card p{
+    font-size: 15px;
+    color: #6e6e6e;
+    line-height: 1.5;
+    padding: 10px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.card #img3{
+    height: 420px;
+}
+
+ @media (width < 750px) {
+
+.container .row .header1 h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+
+    position: relative;
+    margin-left: 2px;
+    
+}
+
+
+.container h1{
+    transform: translate(0%, 10%);
+}
+
+.container p{
+    
+    transform: translate(0, 4%);
+}
+
+    
+} 
+
+.par{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    text-justify: newspaper;
+}
+
+/* ------------------------VIDEO---------------------------------------------------------- */
+
+.video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-bottom: 20px;
+    margin-top: auto;
+}
+
+.video-container video {
+    width: 75%;
+    height: 80%;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)''
+}
+
+.intro-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.intro-overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.intro-overlay p {
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 768px){
+.logo{
+  display: none;
+}
+
+.navbar{
+  display: flex;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.video-container{
+    transform: translate(-1%, 17%);
+    margin-left: 6px;
+}
+
+.container h1{
+    position: absolute;
+    margin-left: 10px;
+}
+
+.container_billard .row .header1{
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+    text-align: justify;
+    margin: 0;
+}
+
+
+.container_billard .row .header1 h1{
+    margin-left: 0;
+    text-align: center;
+}
+
+
+
+}
+
+iframe{
+    margin-left: 250px;
+}
